@@ -10,10 +10,10 @@
 from sys import argv
 
 
-def my_func(time, stavka, prem):
-    return time * stavka + prem
+def my_func(time, stv, prem):
+    return time * stv + prem
 
 
-sckript_name, time, stavka, prem = argv
+sckript_name, time, stv, prem = argv
 
-print(f"ЗП: {my_func(int(time), int(stavka), int(prem))} р")
+print(f"ЗП: {my_func(int(time), int(stv), int(prem))} р")
