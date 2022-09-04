@@ -13,12 +13,12 @@ with open("lesson-5/lesson5.4/lesson5,4.txt", "r+") as f1:
         a.extend(k.rstrip().split(" "))
 
 print("Менее 20 000р у: ")
-sum = 0
+summ = 0
 for i in range(1, len(a), 2):
     por = float(a[i])
-    sum += por
+    summ += por
     ca = len(a) / 2
     if por < 20000:
         print(a[i - 1])
-av = sum / ca
+av = summ / ca
 print(f"\nСредняя величина дохода сотрудников: {av}")
